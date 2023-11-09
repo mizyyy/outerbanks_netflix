@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>netflix</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Netflix-Brand-Logo.png" width="200px" height="100px" />
+      </div>
+      <div class="menu">
+        <a href="#">SÉRIES E FILMES ILIMITADOS </a>
+        <a id="botao" href="#">ENTRAR</a>
+      </div>
+    </nav>
+    <div class="principal">
+      <img src="titulo.png" width="500px" height="150px" />
+    </div>
+    <div class="card">
+      <h2 style=" margin-left: 0px;"> Bancos Externos </h2>
+      <p>2020 | A16 | 3 temporadas | Drama</p>
+      <h3>
+        Em uma ilha entre ricos e pobres, o adolescente John B convoca seus três
+        melhores amigos para caçar um tesouro lendário ligado ao desaparecimento
+        de seu pai.
+        <p>Elenco:</p>
+        Chase Stokes, Madelyn Cline, Madison Bailey
+        <p>Criadores:</p>
+        Josh Pate, Jonas Pate, Shannon Burke
+      </h3>
+    </div>
+
+    <footer>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        
+        <div>
+            <h2>
+                Vídeos | Outer Banks
+            </h2>
+        </div>
+    
+        <div class="image-gallery">
+            <div class="image-container">
+            <a href="https://youtu.be/pfY3j-3uQhk"> <img src="obx11.gif" alt="Imagem 1" onclick="openImage(0)"></a>
+              <p class="description">
+                Temporada 1 (Trailer): Outer Banks</p>
+            </div>
+    
+            <div class="image-container">
+             <a href="https://youtu.be/slC_drCw1dA"> <img src="obx2.gif" alt="Imagem 2" onclick="openImage(1)"></a>
+              <p class="description">
+                Temporada 2 (Trailer): Outer Banks</p>
+            </div>
+    
+            <div class="image-container">
+             <a href="https://youtu.be/CjzsoFglJ7w"> <img src="lulugifs-outer-banks.gif" alt="Imagem 3" onclick="openImage(2)" ></a>
+              
+              <p class="description">
+                Temporada 3 (Trailer): Outer Banks</p>
+            </div>
+          
+        
+          <script>
+            let currentImageIndex = 0;
+    
+            function prevImage() {
+              if (currentImageIndex > 0) {
+                currentImageIndex--;
+              }
+            }
+        
+            function nextImage() {
+              if (currentImageIndex < 3) {
+                currentImageIndex++;
+              }
+            }
+          </script>
+    </footer>
+
+    
+</html>
